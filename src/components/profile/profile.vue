@@ -10,7 +10,7 @@
         <img :src="$store.state.userImage" id="profileImg" />
         <el-upload
           class="upload-demo"
-          action="http://192.168.1.104:8080/uploadfile"
+          action="http://121.196.154.219:8080/uploadfile"
           :show-file-list="false"
           :on-error="showError"
           :on-success="showSuccess"
