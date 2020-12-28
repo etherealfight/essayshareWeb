@@ -60,7 +60,7 @@ export default {
   display: flex;
   background: white;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
 }
 @font-face {

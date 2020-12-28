@@ -35,13 +35,10 @@
       ></i>
     </div>
     <div class="contentText">
-      <pre id="preid"
-        style="
-          overflow: hidden;
-          box-sizing: border-box;
-          word-break: break-all;
-        "
-      >{{contentText}}</pre
+      <pre
+        id="preid"
+        style="overflow: hidden; box-sizing: border-box; word-break: break-all"
+        >{{ contentText }}</pre
       >
       <span style="margin-right: 20px; margin-left: auto"
         >---------{{ username }} {{ currentData }}</span
@@ -140,24 +137,14 @@ export default {
     },
     currentData() {
       return dayjs(this.date).format("YYYY年MM月DD日 HH:mm:ss");
-      
     },
-  },mounted () {
-    console.log(this.contentText)
-  }
+  },
   
 };
-
 </script>
 
 <style>
-pre {
-white-space: pre-wrap; /* css-3 */
-white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-white-space: -pre-wrap; /* Opera 4-6 */
-white-space: -o-pre-wrap; /* Opera 7 */
-word-wrap: break-word; /* Internet Explorer 5.5+ */
-}
+
 .contentBox {
   width: 800px;
   display: flex;
@@ -195,5 +182,9 @@ word-wrap: break-word; /* Internet Explorer 5.5+ */
 #poBox {
   display: flex;
   flex-direction: column;
+}
+#preid {
+  font-size: 20px;
+  font-weight: bold;
 }
 </style>

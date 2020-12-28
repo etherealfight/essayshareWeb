@@ -117,9 +117,10 @@ export default {
       console.log(err);
     },
     async showSuccess(response, file, fileList) {
-      console.log(response.detail);
+      console.log(response);
       this.$store.commit("changeUserImage", { userImage: response.detail });
       let that = this;
+      console.log(this.$store.state.userImage)
       const res = await update(
         that.$store.state.userName,
         that.$store.state.nickName,
@@ -129,6 +130,7 @@ export default {
         that.$store.state.userImage,
       );
       console.log(res)
+      this.$message.info(response.msg)
     },
     /**
      * 监听修改按钮，发送修改后的用户信息

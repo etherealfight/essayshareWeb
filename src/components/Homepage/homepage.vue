@@ -141,7 +141,7 @@ export default {
         this.pageNum++;
         console.log(this.pageNum)
       } catch (error) {
-        this.$message.warning(error.message);
+        //this.$message.warning(error.message);
       }
     },
     /**
