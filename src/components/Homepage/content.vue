@@ -35,11 +35,7 @@
       ></i>
     </div>
     <div class="contentText">
-      <pre
-        id="preid"
-        style="overflow: hidden; box-sizing: border-box; word-break: break-all"
-        >{{ contentText }}</pre
-      >
+      <pre id="preid">{{ contentText }}</pre>
       <span style="margin-right: 20px; margin-left: auto"
         >---------{{ username }} {{ currentData }}</span
       >
@@ -139,12 +135,10 @@ export default {
       return dayjs(this.date).format("YYYY年MM月DD日 HH:mm:ss");
     },
   },
-  
 };
 </script>
 
 <style>
-
 .contentBox {
   width: 800px;
   display: flex;
@@ -186,5 +180,8 @@ export default {
 #preid {
   font-size: 20px;
   font-weight: bold;
+  overflow: hidden;
+  box-sizing: border-box;
+  word-break: break-all;
 }
 </style>
